@@ -18,29 +18,29 @@
     <ctl name="LINEOUT4 Volume" value="0" />
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
-    <ctl name="RX1 Digital Volume" value="84" />
-    <ctl name="RX2 Digital Volume" value="84" />
+    <ctl name="RX1 Digital Volume" value="80" />
+    <ctl name="RX2 Digital Volume" value="80" />
     <ctl name="RX3 Digital Volume" value="0" />
     <ctl name="RX4 Digital Volume" value="0" />
     <ctl name="RX5 Digital Volume" value="0" />
     <ctl name="RX6 Digital Volume" value="0" />
-    <ctl name="RX7 Digital Volume" value="84" />
+    <ctl name="RX7 Digital Volume" value="80" />
     <ctl name="ADC1 Volume" value="19" />
     <ctl name="ADC2 Volume" value="19" />
     <ctl name="ADC3 Volume" value="19" />
     <ctl name="ADC4 Volume" value="19" />
     <ctl name="ADC5 Volume" value="19" />
     <ctl name="ADC6 Volume" value="19" />
-    <ctl name="DEC1 Volume" value="84" />
-    <ctl name="DEC2 Volume" value="84" />
-    <ctl name="DEC3 Volume" value="84" />
-    <ctl name="DEC4 Volume" value="84" />
-    <ctl name="DEC5 Volume" value="84" />
-    <ctl name="DEC6 Volume" value="84" />
-    <ctl name="DEC7 Volume" value="84" />
-    <ctl name="DEC8 Volume" value="84" />
-    <ctl name="DEC9 Volume" value="84" />
-    <ctl name="DEC10 Volume" value="84" />
+    <ctl name="DEC1 Volume" value="80" />
+    <ctl name="DEC2 Volume" value="80" />
+    <ctl name="DEC3 Volume" value="80" />
+    <ctl name="DEC4 Volume" value="80" />
+    <ctl name="DEC5 Volume" value="80" />
+    <ctl name="DEC6 Volume" value="80" />
+    <ctl name="DEC7 Volume" value="80" />
+    <ctl name="DEC8 Volume" value="80" />
+    <ctl name="DEC9 Volume" value="80" />
+    <ctl name="DEC10 Volume" value="80" />
     <ctl name="COMP0 Switch" value="0" />
     <ctl name="COMP1 Switch" value="0" />
     <ctl name="COMP2 Switch" value="0" />
@@ -566,14 +566,14 @@
     <path name="secondmic">
         <path name="2nd-mic" />
         <ctl name="ADC3 Volume" value="19" />
-        <ctl name="DEC4 Volume" value="84" />
+        <ctl name="DEC4 Volume" value="80" />
         <ctl name="IIR1 INP1 MUX" value="DEC4" />
     </path>
 
     <path name="line">
         <path name="main-mic" />
         <ctl name="ADC4 Volume" value="12" />
-        <ctl name="DEC3 Volume" value="84" />
+        <ctl name="DEC3 Volume" value="80" />
     </path>
 
     <path name="line-vr">
@@ -603,46 +603,46 @@
         <path name="dual-mic" />
         <ctl name="ADC4 Volume" value="6" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC4 Volume" value="84" />
-        <ctl name="DEC3 Volume" value="84" />
+        <ctl name="DEC4 Volume" value="80" />
+        <ctl name="DEC3 Volume" value="80" />
     </path>
 
     <path name="line-invertlandscapecam">
         <path name="dual-mic-inverse" />
         <ctl name="ADC4 Volume" value="6" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC4 Volume" value="84" />
-        <ctl name="DEC3 Volume" value="84" />
+        <ctl name="DEC4 Volume" value="80" />
+        <ctl name="DEC3 Volume" value="80" />
     </path>
 
     <path name="line-portraitcam">
         <path name="dual-mic" />
         <ctl name="ADC4 Volume" value="6" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC4 Volume" value="84" />
-        <ctl name="DEC3 Volume" value="84" />
+        <ctl name="DEC4 Volume" value="80" />
+        <ctl name="DEC3 Volume" value="80" />
     </path>
 
     <path name="handset-hw-voip">
         <path name="dual-mic-inverse" />
-        <ctl name="ADC4 Volume" value="13" />
-        <ctl name="ADC3 Volume" value="13" />
-        <ctl name="DEC4 Volume" value="84" />
-        <ctl name="DEC3 Volume" value="79" />
+        <ctl name="ADC4 Volume" value="11" />
+        <ctl name="ADC3 Volume" value="11" />
+        <ctl name="DEC4 Volume" value="75" />
+        <ctl name="DEC3 Volume" value="74" />
     </path>
 
     <path name="dmic-endfire">
         <path name="dual-mic-inverse" />
         <ctl name="ADC4 Volume" value="13" />
         <ctl name="ADC3 Volume" value="13" />
-        <ctl name="DEC4 Volume" value="84" />
+        <ctl name="DEC4 Volume" value="80" />
         <ctl name="DEC3 Volume" value="79" />
     </path>
 
     <path name="speaker-dmic-endfire">
         <path name="2nd-mic" />
-        <ctl name="ADC3 Volume" value="13" />
-        <ctl name="DEC4 Volume" value="87" />
+        <ctl name="ADC3 Volume" value="12" />
+        <ctl name="DEC4 Volume" value="82" />
     </path>
 
     <path name="headphones-generic">
@@ -668,10 +668,10 @@
 
     <path name="headphones">
         <path name="headphones-generic" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
-        <ctl name="RX5 Digital Volume" value="84" />
-        <ctl name="RX6 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
+        <ctl name="RX5 Digital Volume" value="80" />
+        <ctl name="RX6 Digital Volume" value="80" />
         <ctl name="LINEOUT1 Volume" value="16" />
         <ctl name="LINEOUT2 Volume" value="16" />
         <ctl name="LINEOUT3 Volume" value="16" />
@@ -713,10 +713,10 @@
         <ctl name="IIR1 INP1 Volume" value="65" />
         <ctl name="RX3 MIX1 INP2" value="IIR1" />
         <ctl name="RX5 MIX1 INP2" value="IIR1" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
-        <ctl name="RX5 Digital Volume" value="84" />
-        <ctl name="RX6 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
+        <ctl name="RX5 Digital Volume" value="80" />
+        <ctl name="RX6 Digital Volume" value="80" />
         <ctl name="LINEOUT1 Volume" value="16" />
         <ctl name="LINEOUT2 Volume" value="16" />
         <ctl name="LINEOUT3 Volume" value="16" />
@@ -737,10 +737,10 @@
 
     <path name="headphones-hw-voip">
         <path name="headphones-generic" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
-        <ctl name="RX5 Digital Volume" value="84" />
-        <ctl name="RX6 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
+        <ctl name="RX5 Digital Volume" value="80" />
+        <ctl name="RX6 Digital Volume" value="80" />
         <ctl name="LINEOUT1 Volume" value="16" />
         <ctl name="LINEOUT2 Volume" value="16" />
         <ctl name="LINEOUT3 Volume" value="16" />
@@ -765,24 +765,24 @@
 
     <path name="earpiece-voice">
         <path name="earpiece-generic" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
         <ctl name="LINEOUT1 Volume" value="16" />
         <ctl name="LINEOUT3 Volume" value="16" />
     </path>
 
     <path name="earpiece-hac-voice">
         <path name="earpiece-generic" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
         <ctl name="LINEOUT1 Volume" value="16" />
         <ctl name="LINEOUT3 Volume" value="16" />
     </path>
 
     <path name="earpiece-hw-voip">
         <path name="earpiece-generic" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
         <ctl name="LINEOUT1 Volume" value="16" />
         <ctl name="LINEOUT3 Volume" value="16" />
     </path>
@@ -797,20 +797,20 @@
     <path name="headset">
         <path name="headset-mic-generic" />
         <ctl name="ADC2 Volume" value="8" />
-        <ctl name="DEC5 Volume" value="84" />
+        <ctl name="DEC5 Volume" value="80" />
     </path>
 
     <path name="headset-voice">
         <path name="headset-mic-generic" />
         <ctl name="ADC2 Volume" value="12" />
-        <ctl name="DEC5 Volume" value="84" />
+        <ctl name="DEC5 Volume" value="80" />
         <ctl name="IIR1 INP1 MUX" value="DEC5" />
     </path>
 
     <path name="headset-hw-voip">
         <path name="headset-mic-generic" />
         <ctl name="ADC2 Volume" value="12" />
-        <ctl name="DEC5 Volume" value="84" />
+        <ctl name="DEC5 Volume" value="80" />
     </path>
 
     <path name="headset-mic">
@@ -822,14 +822,14 @@
     <path name="headset-speaker-vr">
         <path name="headset-mic-generic" />
         <ctl name="ADC2 Volume" value="12" />
-        <ctl name="DEC5 Volume" value="84" />
+        <ctl name="DEC5 Volume" value="80" />
         <ctl name="IIR1 INP1 MUX" value="DEC5" />
     </path>
 
     <path name="headset-cam">
         <path name="headset-mic-generic" />
         <ctl name="ADC2 Volume" value="8" />
-        <ctl name="DEC5 Volume" value="84" />
+        <ctl name="DEC5 Volume" value="80" />
     </path>
     <!-- M8 calls this path for normal phone calle -->
     <path name="speaker">
@@ -838,23 +838,23 @@
     <path name="speaker-headset">
         <path name="headphones-generic" />
         <path name="speaker" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
-        <ctl name="RX5 Digital Volume" value="84" />
-        <ctl name="RX6 Digital Volume" value="84" />
-        <ctl name="LINEOUT1 Volume" value="16" />
-        <ctl name="LINEOUT2 Volume" value="16" />
-        <ctl name="LINEOUT3 Volume" value="16" />
-        <ctl name="LINEOUT4 Volume" value="16" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
+        <ctl name="RX5 Digital Volume" value="80" />
+        <ctl name="RX6 Digital Volume" value="80" />
+        <ctl name="LINEOUT1 Volume" value="14" />
+        <ctl name="LINEOUT2 Volume" value="14" />
+        <ctl name="LINEOUT3 Volume" value="14" />
+        <ctl name="LINEOUT4 Volume" value="14" />
     </path>
 
     <path name="voice-tty-full-headphones">
         <ctl name="TTY Mode" value="FULL" />
         <path name="headphones-voice-generic" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
-        <ctl name="RX5 Digital Volume" value="84" />
-        <ctl name="RX6 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
+        <ctl name="RX5 Digital Volume" value="80" />
+        <ctl name="RX6 Digital Volume" value="80" />
         <ctl name="LINEOUT1 Volume" value="16" />
         <ctl name="LINEOUT2 Volume" value="16" />
         <ctl name="LINEOUT3 Volume" value="16" />
@@ -864,10 +864,10 @@
     <path name="voice-tty-vco-headphones">
         <ctl name="TTY Mode" value="VCO" />
         <path name="headphones-voice-generic" />
-        <ctl name="RX3 Digital Volume" value="84" />
-        <ctl name="RX4 Digital Volume" value="84" />
-        <ctl name="RX5 Digital Volume" value="84" />
-        <ctl name="RX6 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
+        <ctl name="RX5 Digital Volume" value="80" />
+        <ctl name="RX6 Digital Volume" value="80" />
         <ctl name="LINEOUT1 Volume" value="16" />
         <ctl name="LINEOUT2 Volume" value="16" />
         <ctl name="LINEOUT3 Volume" value="16" />
