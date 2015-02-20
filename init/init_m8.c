@@ -1,6 +1,5 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
-
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -13,7 +12,6 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -34,7 +32,8 @@
 #include "log.h"
 #include "util.h"
 
-void cdma_properties(char default_network[],
+void cdma_properties(char cdma_subscription[],
+                     char default_network[],
                      char operator_numeric[],
                      char operator_alpha[]);
 
@@ -54,7 +53,7 @@ void vendor_load_properties()
 
     if (strstr(bootmid, "0P6B20000")) {
         /* m8vzw (m8wl) */
-        cdma_properties("10", "310012", "Verizon");
+        cdma_properties("0", "10", "310012", "Verizon");
         property_set("ro.build.fingerprint", "htc/HTCOneM8vzw/htc_m8wl:4.4.4/KTU84P/390638.4:user/release-keys");
         property_set("ro.build.description", "3.28.605.4 CL390638 release-keys");
         property_set("ro.product.device", "htc_m8wl");
@@ -77,29 +76,23 @@ void vendor_load_properties()
         property_set("ro.config.svlte1x", "true");
         property_set("ro.ril.def.agps.mode", "6");
         property_set("ro.telephony.get_imsi_from_sim", "true");
-	property_set("ro.telephony.default_cdma_sub", "0");
-	property_set("ro.ril.disable.fd.plmn.prefix", "23402,23410,23411,23420");
-	property_set("ro.ril.enable.sdr", "0");
-	property_set("ro.ril.enable.gea3", "1");
-	property_set("ro.ril.enable.a53", "1");
     } else if (strstr(bootmid, "0P6B70000")) {
         /* m8spr (m8whl) */
-        cdma_properties("8", "310120", "Sprint");
-        property_set("ro.build.fingerprint", "htc/sprint_wwe/htc_m8whl:4.4.4/KTU84P/393205.2:user/release-keys");
-        property_set("ro.build.description", "3.30.651.2 CL393205 release-keys");
-        property_set("ro.product.device", "htc_m8whl");
-        property_set("ro.build.product", "htc_m8whl");
+        cdma_properties("1", "8", "310120", "Sprint");
+        property_set("ro.build.fingerprint", "htc/sprint_wwe/htc_m8whl:4.4.2/KOT49H/326598.8:user/release-keys");
+        property_set("ro.build.description", "1.54.651.8 CL326598 release-keys");
+        property_set("ro.product.device", "m8spr");
+        property_set("ro.build.product", "m8spr");
         property_set("telephony.sms.pseudo_multipart", "1");
-        property_set("ro.ril.enable.pre_r8fd=1", "1");
         property_set("ro.ril.oem.ecclist", "911");
+        property_set("ro.ril.enable.pre_r8fd=1", "1");
+        property_set("ro.ril.enable.sdr", "0");
         property_set("ro.ril.set.mtusize", "1422");
-	property_set("persist.radio.mode_pref_nv10", "1");
-	property_set("persist.radio.dont_use_dsd", "true");
     } else {
         /* m8 */
-        property_set("ro.build.fingerprint", "htc/m8_google/htc_m8:5.0.1/LRX22C.H5/434277:user/release-keys");
-        property_set("ro.build.description", "3.11.1700.5 CL434277 release-keys");
-        property_set("ro.product.device", "htc_m8");
+        property_set("ro.build.fingerprint", "htc/htc_europe/htc_m8:4.4.2/KOT49H/325784.5:user/release-keys");
+        property_set("ro.build.description", "1.54.401.5 CL325784 release-keys");
+        property_set("ro.product.device", "m8");
         property_set("ro.telephony.default_network", "9");
         property_set("telephony.lteOnGsmDevice", "1");
     }
@@ -108,9 +101,10 @@ void vendor_load_properties()
     ERROR("Found bootmid %s setting build properties for %s device\n", bootmid, device);
 }
 
-void cdma_properties(char default_network[], char operator_numeric[],
-                     char operator_alpha[])
+void cdma_properties(char default_cdma_sub[], char default_network[],
+                     char operator_numeric[], char operator_alpha[])
 {
+    property_set("ro.telephony.default_cdma_sub", default_cdma_sub);
     property_set("ro.telephony.default_network", default_network);
     property_set("ro.cdma.home.operator.numeric", operator_numeric);
     property_set("gsm.sim.operator.numeric", operator_numeric);
@@ -118,11 +112,15 @@ void cdma_properties(char default_network[], char operator_numeric[],
     property_set("ro.cdma.home.operator.alpha", operator_alpha);
     property_set("gsm.sim.operator.alpha", operator_alpha);
     property_set("gsm.operator.alpha", operator_numeric);
-    property_set("gsm.operator.iso-country", "us");
 
     property_set("telephony.lteOnCdmaDevice", "1");
     property_set("ro.cdma.subscribe_on_ruim_ready", "true");
     property_set("ro.ril.svdo", "true");
+    property_set("ro.ril.disable.fd.plmn.prefix", "23402,23410,23411,23420");
+    property_set("ro.ril.enable.sdr", "0");
+    property_set("ro.ril.enable.gea3", "1");
+    property_set("ro.ril.enable.a53", "1");
+    property_set("ro.ril.enable.r8fd=1", "1");
     property_set("persist.radio.snapshot_enabled", "1");
     property_set("persist.radio.snapshot_timer", "22");
 }
