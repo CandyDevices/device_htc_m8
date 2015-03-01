@@ -64,8 +64,14 @@ TARGET_KERNEL_CONFIG := cm_m8_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8974
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9-sm/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-SUGARRUSH=true
-KRAIT_TUNINGS=true
+
+# Rom Optimization
+USE_GRAPHITE := true
+USE_FSTRICT_FLAGS := true
+FSTRICT_ALIASING_WARNING_LEVEL := 3
+USE_BINARY_FLAGS := true
+USE_EXTRA_CLANG_FLAGS := true
+USE_LTO := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true

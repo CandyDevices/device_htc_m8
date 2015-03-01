@@ -238,3 +238,5 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     libwpa_client \
     wpa_supplicant
+# DeviceHandler
+PRODUCT_PACKAGES += \ DeviceHandler
