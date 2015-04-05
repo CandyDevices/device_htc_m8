@@ -609,6 +609,7 @@ on property:service.bootanim.exit=1
 
     write /sys/module/snd_soc_wcd9320/parameters/high_perf_mode "1"
 
+
 on property:init.svc.bootanim=running
     # Switch to NOOP and performance mode while booting
     write /sys/block/mmcblk0/queue/scheduler noop
