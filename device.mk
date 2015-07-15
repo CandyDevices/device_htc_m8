@@ -231,6 +231,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
     
-# flar2 off screen gestures 
+# flar2 screen off gestures 
 PRODUCT_COPY_FILES += \
-    device/htc/m8/pre_builts/system/priv-app/WakeGestures/WakeGestures-1.1.apk:system/app/priv-app/WakeGestures/WakeGestures-1.1.apk
+    device/htc/m8/pre_builts/system/priv-app/WakeGestures/WakeGestures-1.1.apk:system/priv-app/WakeGestures/WakeGestures-1.1.apk
